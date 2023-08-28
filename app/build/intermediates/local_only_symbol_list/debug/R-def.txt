@@ -1,0 +1,30 @@
+R_DEF: Internal format may change without notice
+local
+color black
+color white
+drawable ic_add
+drawable ic_calendar
+drawable ic_launcher_background
+drawable ic_launcher_foreground
+id bottomNavigationView
+id calendarView
+id dateTextView
+id frameLayout
+id listView
+id menu_add
+id menu_calendar
+id menu_home
+id nameTextView
+layout abgabe_list_item_layout
+layout activity_main
+layout add_fragment
+layout calendar_fragment
+layout home_fragment
+menu bottom_menu
+mipmap ic_launcher
+mipmap ic_launcher_round
+string app_name
+style Base.Theme.Androidapp
+style Theme.Androidapp
+xml backup_rules
+xml data_extraction_rules

@@ -1,0 +1,102 @@
+[
+    {
+        "merged": "C:\\Users\\feuer\\.gradle\\daemon\\8.0\\de.medieninformatik.androidapp-merged_res-28:\\menu_bottom_menu.xml.flat",
+        "source": "C:\\Users\\feuer\\.gradle\\daemon\\8.0\\de.medieninformatik.androidapp-main-30:\\menu\\bottom_menu.xml"
+    },
+    {
+        "merged": "C:\\Users\\feuer\\.gradle\\daemon\\8.0\\de.medieninformatik.androidapp-merged_res-28:\\mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\feuer\\.gradle\\daemon\\8.0\\de.medieninformatik.androidapp-main-30:\\mipmap-xhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\feuer\\.gradle\\daemon\\8.0\\de.medieninformatik.androidapp-merged_res-28:\\mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\feuer\\.gradle\\daemon\\8.0\\de.medieninformatik.androidapp-main-30:\\mipmap-xxxhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\feuer\\.gradle\\daemon\\8.0\\de.medieninformatik.androidapp-merged_res-28:\\mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\feuer\\.gradle\\daemon\\8.0\\de.medieninformatik.androidapp-main-30:\\mipmap-hdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\feuer\\.gradle\\daemon\\8.0\\de.medieninformatik.androidapp-merged_res-28:\\mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\feuer\\.gradle\\daemon\\8.0\\de.medieninformatik.androidapp-main-30:\\mipmap-mdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\feuer\\.gradle\\daemon\\8.0\\de.medieninformatik.androidapp-merged_res-28:\\mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\feuer\\.gradle\\daemon\\8.0\\de.medieninformatik.androidapp-main-30:\\mipmap-mdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\feuer\\.gradle\\daemon\\8.0\\de.medieninformatik.androidapp-merged_res-28:\\drawable-v24_ic_launcher_foreground.xml.flat",
+        "source": "C:\\Users\\feuer\\.gradle\\daemon\\8.0\\de.medieninformatik.androidapp-main-30:\\drawable-v24\\ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "C:\\Users\\feuer\\.gradle\\daemon\\8.0\\de.medieninformatik.androidapp-merged_res-28:\\xml_backup_rules.xml.flat",
+        "source": "C:\\Users\\feuer\\.gradle\\daemon\\8.0\\de.medieninformatik.androidapp-main-30:\\xml\\backup_rules.xml"
+    },
+    {
+        "merged": "C:\\Users\\feuer\\.gradle\\daemon\\8.0\\de.medieninformatik.androidapp-merged_res-28:\\mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\feuer\\.gradle\\daemon\\8.0\\de.medieninformatik.androidapp-main-30:\\mipmap-xxhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\feuer\\.gradle\\daemon\\8.0\\de.medieninformatik.androidapp-merged_res-28:\\mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\feuer\\.gradle\\daemon\\8.0\\de.medieninformatik.androidapp-main-30:\\mipmap-xhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\feuer\\.gradle\\daemon\\8.0\\de.medieninformatik.androidapp-merged_res-28:\\layout_activity_main.xml.flat",
+        "source": "C:\\Users\\feuer\\.gradle\\daemon\\8.0\\de.medieninformatik.androidapp-main-30:\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\feuer\\.gradle\\daemon\\8.0\\de.medieninformatik.androidapp-merged_res-28:\\mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\feuer\\.gradle\\daemon\\8.0\\de.medieninformatik.androidapp-main-30:\\mipmap-hdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\feuer\\.gradle\\daemon\\8.0\\de.medieninformatik.androidapp-merged_res-28:\\xml_data_extraction_rules.xml.flat",
+        "source": "C:\\Users\\feuer\\.gradle\\daemon\\8.0\\de.medieninformatik.androidapp-main-30:\\xml\\data_extraction_rules.xml"
+    },
+    {
+        "merged": "C:\\Users\\feuer\\.gradle\\daemon\\8.0\\de.medieninformatik.androidapp-merged_res-28:\\mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\feuer\\.gradle\\daemon\\8.0\\de.medieninformatik.androidapp-main-30:\\mipmap-xxxhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\feuer\\.gradle\\daemon\\8.0\\de.medieninformatik.androidapp-merged_res-28:\\drawable_ic_launcher_background.xml.flat",
+        "source": "C:\\Users\\feuer\\.gradle\\daemon\\8.0\\de.medieninformatik.androidapp-main-30:\\drawable\\ic_launcher_background.xml"
+    },
+    {
+        "merged": "de.medieninformatik.androidapp-merged_res-28:/layout_home_fragment.xml.flat",
+        "source": "de.medieninformatik.androidapp-main-30:/layout/home_fragment.xml"
+    },
+    {
+        "merged": "C:\\Users\\feuer\\.gradle\\daemon\\8.0\\de.medieninformatik.androidapp-merged_res-28:\\mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\feuer\\.gradle\\daemon\\8.0\\de.medieninformatik.androidapp-main-30:\\mipmap-xxhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\feuer\\.gradle\\daemon\\8.0\\de.medieninformatik.androidapp-merged_res-28:\\layout_add_fragment.xml.flat",
+        "source": "C:\\Users\\feuer\\.gradle\\daemon\\8.0\\de.medieninformatik.androidapp-main-30:\\layout\\add_fragment.xml"
+    },
+    {
+        "merged": "C:\\Users\\feuer\\.gradle\\daemon\\8.0\\de.medieninformatik.androidapp-merged_res-28:\\drawable_ic_calendar.png.flat",
+        "source": "C:\\Users\\feuer\\.gradle\\daemon\\8.0\\de.medieninformatik.androidapp-main-30:\\drawable\\ic_calendar.png"
+    },
+    {
+        "merged": "C:\\Users\\feuer\\.gradle\\daemon\\8.0\\de.medieninformatik.androidapp-merged_res-28:\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "C:\\Users\\feuer\\.gradle\\daemon\\8.0\\de.medieninformatik.androidapp-main-30:\\mipmap-anydpi-v26\\ic_launcher.xml"
+    },
+    {
+        "merged": "C:\\Users\\feuer\\.gradle\\daemon\\8.0\\de.medieninformatik.androidapp-merged_res-28:\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "C:\\Users\\feuer\\.gradle\\daemon\\8.0\\de.medieninformatik.androidapp-main-30:\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+    },
+    {
+        "merged": "C:\\Users\\feuer\\.gradle\\daemon\\8.0\\de.medieninformatik.androidapp-merged_res-28:\\drawable_ic_add.png.flat",
+        "source": "C:\\Users\\feuer\\.gradle\\daemon\\8.0\\de.medieninformatik.androidapp-main-30:\\drawable\\ic_add.png"
+    },
+    {
+        "merged": "C:\\Users\\feuer\\.gradle\\daemon\\8.0\\de.medieninformatik.androidapp-merged_res-28:\\layout_calendar_fragment.xml.flat",
+        "source": "C:\\Users\\feuer\\.gradle\\daemon\\8.0\\de.medieninformatik.androidapp-main-30:\\layout\\calendar_fragment.xml"
+    },
+    {
+        "merged": "C:\\Users\\feuer\\.gradle\\daemon\\8.0\\de.medieninformatik.androidapp-merged_res-28:\\layout_home_fragment.xml.flat",
+        "source": "C:\\Users\\feuer\\.gradle\\daemon\\8.0\\de.medieninformatik.androidapp-main-30:\\layout\\home_fragment.xml"
+    },
+    {
+        "merged": "C:\\Users\\feuer\\.gradle\\daemon\\8.0\\de.medieninformatik.androidapp-merged_res-28:\\layout_abgabe_list_item_layout.xml.flat",
+        "source": "C:\\Users\\feuer\\.gradle\\daemon\\8.0\\de.medieninformatik.androidapp-main-30:\\layout\\abgabe_list_item_layout.xml"
+    }
+]
