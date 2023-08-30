@@ -2603,6 +2603,8 @@ id bounceBoth
 id bounceEnd
 id bounceStart
 id buttonPanel
+id button_createToDos
+id button_submit
 id cache_measures
 id calendarView
 id callMeasure
@@ -2722,8 +2724,15 @@ id ignore
 id ignoreRequest
 id image
 id immediateStop
+id in_description
+id in_name
+id in_subject
 id included
 id info
+id input_date
+id input_description
+id input_name
+id input_subject
 id invisible
 id inward
 id italic
@@ -2937,6 +2946,10 @@ id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
 id textTop
+id textView
+id textView2
+id textView3
+id textView5
 id text_input_end_icon
 id text_input_error_icon
 id text_input_start_icon
