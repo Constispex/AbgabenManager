@@ -56,12 +56,12 @@
         "source": "C:\\Users\\feuer\\.gradle\\daemon\\8.0\\de.medieninformatik.androidapp-main-31:\\drawable\\ic_add.png"
     },
     {
-        "merged": "C:\\Users\\feuer\\.gradle\\daemon\\8.0\\de.medieninformatik.androidapp-merged_res-29:\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
-        "source": "C:\\Users\\feuer\\.gradle\\daemon\\8.0\\de.medieninformatik.androidapp-main-31:\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+        "merged": "de.medieninformatik.androidapp-merged_res-29:/layout_abgabe_list_item_layout.xml.flat",
+        "source": "de.medieninformatik.androidapp-main-31:/layout/abgabe_list_item_layout.xml"
     },
     {
-        "merged": "de.medieninformatik.androidapp-merged_res-29:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
-        "source": "de.medieninformatik.androidapp-main-31:/mipmap-anydpi-v26/ic_launcher_round.xml"
+        "merged": "C:\\Users\\feuer\\.gradle\\daemon\\8.0\\de.medieninformatik.androidapp-merged_res-29:\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "C:\\Users\\feuer\\.gradle\\daemon\\8.0\\de.medieninformatik.androidapp-main-31:\\mipmap-anydpi-v26\\ic_launcher_round.xml"
     },
     {
         "merged": "C:\\Users\\feuer\\.gradle\\daemon\\8.0\\de.medieninformatik.androidapp-merged_res-29:\\layout_abgabe_list_item_layout.xml.flat",
