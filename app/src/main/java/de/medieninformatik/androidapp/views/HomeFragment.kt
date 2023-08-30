@@ -8,12 +8,12 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.ListView
 import androidx.fragment.app.Fragment
-import com.google.gson.Gson
 import de.medieninformatik.abgabenmanager.model.Abgabe
+import de.medieninformatik.abgabenmanager.model.Task
 import de.medieninformatik.androidapp.R
 import de.medieninformatik.androidapp.model.AbgabeAdapter
+import org.json.JSONArray
 import org.json.JSONObject
-import java.io.FileReader
 
 class HomeFragment : Fragment() {
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
@@ -28,32 +28,31 @@ class HomeFragment : Fragment() {
     }
 
     private fun getAbgaben(): MutableList<Abgabe> {
-
         val abgaben = mutableListOf<Abgabe>()
-        abgaben.add(Abgabe(1, "Abgabe 1", "01.01.2021", "MCI", listOf(), "Beschreibung 1", false))
-        abgaben.add(Abgabe(2, "Abgabe 2", "02.01.2021", "MCI", listOf(), "Beschreibung 2", false))
-        abgaben.add(Abgabe(3, "Abgabe 33", "03.01.2021", "MCI", listOf(), "Beschreibung 3", false))
+        val sharedPreferences = context?.getSharedPreferences("sharedPrefs", Context.MODE_PRIVATE)
 
-        val sharedPreferences = context?.getSharedPreferences("json", Context.MODE_PRIVATE)
-        val gson = Gson()
+        val jsonString = sharedPreferences?.getString("json", "[]")
+        val jsonArray = JSONArray(jsonString)
 
-        val jsonString = sharedPreferences?.getString("json", "")
-
-        if (jsonString != "" && jsonString != null) {
-            val jsonObject = JSONObject(jsonString)
-            Log.d("JSON", jsonObject.toString())
-
-            val jsonLength= jsonObject.length()
-            for (i in 0 until jsonLength) {
-                val abgabe = gson.fromJson(jsonObject.getJSONObject(i.toString()).toString(), Abgabe::class.java)
-                abgaben.add(abgabe)
+        for (i in 0 until jsonArray.length()) {
+            val currJsonString = jsonArray.getString(i)
+            try {
+                val currJsonObj = JSONObject(currJsonString)
+                val list: List<Task> = listOf()
+                val curr = Abgabe(
+                    currJsonObj.getInt("id"),
+                    currJsonObj.getString("name"),
+                    currJsonObj.getString("date"),
+                    currJsonObj.getString("subject"),
+                    list,
+                    currJsonObj.getString("description"),
+                    currJsonObj.getBoolean("isDone")
+                )
+                abgaben.add(curr)
+            } catch (e: Exception) {
+                Log.d("JSON", "Error with JSON: $e")
             }
-
-        } else {
-            Log.d("JSON", "No JSON found")
         }
-
-
         return abgaben
     }
 }

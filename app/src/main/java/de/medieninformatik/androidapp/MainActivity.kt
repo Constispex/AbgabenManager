@@ -1,13 +1,8 @@
 package de.medieninformatik.androidapp
 
-import de.medieninformatik.androidapp.model.AbgabeAdapter
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
-import android.widget.ListView
-import androidx.fragment.app.Fragment
+import androidx.appcompat.app.AppCompatActivity
 import com.google.android.material.bottomnavigation.BottomNavigationView
-import de.medieninformatik.abgabenmanager.model.Abgabe
 import de.medieninformatik.androidapp.views.AddFragment
 import de.medieninformatik.androidapp.views.CalendarFragment
 import de.medieninformatik.androidapp.views.HomeFragment

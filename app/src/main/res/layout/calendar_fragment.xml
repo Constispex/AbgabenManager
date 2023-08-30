@@ -5,7 +5,6 @@
     android:layout_height="match_parent">
 
     <CalendarView
-        android:id="@+id/calendarView"
         android:layout_width="415dp"
         android:layout_height="727dp"
         app:layout_constraintBottom_toBottomOf="parent"

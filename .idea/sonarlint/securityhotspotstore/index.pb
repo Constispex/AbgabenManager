@@ -31,3 +31,7 @@ S
 ,.idea/inspectionProfiles/Project_Default.xml,4\9\496a238a6afa168dbaf6efd37bb459331589579c
 p
 @app/src/main/java/de/medieninformatik/androidapp/model/Abgabe.kt,7\4\74fea66d238bfeabc6fb1e5aa5158b98f8f040ef
+u
+Eapp/src/main/java/de/medieninformatik/androidapp/views/AddFragment.kt,4\2\4244570e84937d5dd9fc416eb252812161df32fb
+v
+Fapp/src/main/java/de/medieninformatik/androidapp/views/HomeFragment.kt,c\c\cc16bf7e9bcc7b3799d508bf7203b442d46220f4
