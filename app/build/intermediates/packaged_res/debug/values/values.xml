@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">androidapp</string>
+    <string name="aufgaben">Aufgaben</string>
+    <string name="task1">Task 1</string>
+    <string name="task_2">Task 2</string>
     <style name="Base.Theme.Androidapp" parent="Theme.Material3.DayNight.NoActionBar">
         
         

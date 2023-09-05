@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "de.medieninformatik.androidapp-mergeDebugResources-27:/values-sr/values-sr.xml",
+            "outputFile": "de.medieninformatik.androidapp-mergeDebugResources-28:/values-sr/values-sr.xml",
             "map": [
                 {
                     "source": "C:\\Users\\feuer\\.gradle\\caches\\transforms-3\\4ca3ca160350e83fe776b368c4ad6f86\\transformed\\appcompat-1.6.1\\res\\values-sr\\values-sr.xml",

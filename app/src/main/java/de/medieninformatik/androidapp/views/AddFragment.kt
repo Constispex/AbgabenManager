@@ -9,15 +9,16 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import android.widget.EditText
+import androidx.core.widget.addTextChangedListener
 import androidx.fragment.app.Fragment
 import com.google.android.material.textfield.TextInputEditText
 import com.google.gson.Gson
 import de.medieninformatik.abgabenmanager.model.Abgabe
-import de.medieninformatik.abgabenmanager.model.Task
 import de.medieninformatik.androidapp.R
 import org.json.JSONArray
 
 class AddFragment : Fragment() {
+
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
@@ -27,33 +28,55 @@ class AddFragment : Fragment() {
             R.layout.add_fragment, container, false
         )
 
-        val in_name: TextInputEditText = view.findViewById(R.id.input_name)
-        val in_description: TextInputEditText = view.findViewById(R.id.input_description)
-        val in_date: EditText = view.findViewById(R.id.input_date)
-        val in_subject: TextInputEditText = view.findViewById(R.id.input_subject)
-        val tasks = listOf<Task>()
+        val inName: TextInputEditText = view.findViewById(R.id.input_name)
+        val inDescription: TextInputEditText = view.findViewById(R.id.input_description)
+        val inDate: EditText = view.findViewById(R.id.input_date)
 
-        val button_add_task = view.findViewById(R.id.button_createToDos) as Button
-        val button_submit = view.findViewById(R.id.button_submit) as Button
+        val buttonCancel = view.findViewById(R.id.button_cancel) as Button
+        val buttonSubmit = view.findViewById(R.id.button_submit) as Button
+        var isDate = false
 
-        button_add_task.setOnClickListener {
-            // TODO: Add tasks to list
+        inDate.addTextChangedListener(
+            onTextChanged = { text, _, _, _ ->
+                if (text.toString().length == 2) {
+                    inDate.setText(text.toString() + ".")
+                    inDate.setSelection(inDate.text.toString().length)
+                }
+                if (text.toString().length == 5) {
+                    inDate.setText(text.toString() + ".")
+                    inDate.setSelection(inDate.text.toString().length)
+                }
+                isDate = text.toString().matches(Regex("\\d{2}\\.\\d{2}\\.\\d{4}"))
+            }
+
+        )
+
+        buttonCancel.setOnClickListener {
+            val homeFragment = HomeFragment()
+            val transaction = requireActivity().supportFragmentManager.beginTransaction()
+            transaction.replace(R.id.frameLayout, homeFragment)
+            transaction.commit()
         }
-        button_submit.setOnClickListener {
+
+        buttonSubmit.setOnClickListener {
+
             val abgabe = Abgabe(
                 getLastId(),
-                fillIfEmpty(in_name.text, "Abgabe"),
-                fillIfEmpty(in_date.text, "01.01.2021"),
-                fillIfEmpty(in_subject.text, "MCI"),
-                tasks,
-                fillIfEmpty(in_description.text, "Beschreibung"),
+                fillIfEmpty(inName.text, "Abgabe " + getLastId().toString()),
+                fillIfEmpty(inDate.text, "01.01.2021"),
+                fillIfEmpty(inDescription.text, "Beschreibung"),
                 false
             )
-            Log.i("Abgabe", abgabe.toString())
-            addToJson(abgabe)
+            if (isDate) {
+                Log.i("Abgabe", abgabe.toString())
+                addToJson(abgabe)
 
+                buttonCancel.performClick()
+            } else {
+                Log.i("Abgabe", "Date is not valid")
+                inDate.error = "Date is not valid"
+            }
         }
-
 
         return view
     }
@@ -66,8 +89,10 @@ class AddFragment : Fragment() {
     }
 
     private fun getLastId(): Int {
-        //TODO: find last id
-        return 1
+        val sharedPreferences = context?.getSharedPreferences("sharedPrefs", Context.MODE_PRIVATE)
+        val jsonString = sharedPreferences?.getString("json", "[]")
+        val jsonArray = JSONArray(jsonString)
+        return jsonArray.length() + 1
     }
 
     private fun addToJson(abgabe: Abgabe) {
@@ -81,5 +106,4 @@ class AddFragment : Fragment() {
 
         sharedPreferences?.edit()?.putString("json", jsonArray.toString())?.apply()
     }
-
 }

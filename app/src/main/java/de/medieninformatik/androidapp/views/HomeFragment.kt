@@ -9,7 +9,6 @@ import android.view.ViewGroup
 import android.widget.ListView
 import androidx.fragment.app.Fragment
 import de.medieninformatik.abgabenmanager.model.Abgabe
-import de.medieninformatik.abgabenmanager.model.Task
 import de.medieninformatik.androidapp.R
 import de.medieninformatik.androidapp.model.AbgabeAdapter
 import org.json.JSONArray
@@ -18,12 +17,9 @@ import org.json.JSONObject
 class HomeFragment : Fragment() {
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         val view = inflater.inflate(R.layout.home_fragment, container, false)
-
         val listView: ListView = view.findViewById(R.id.listView)
-
         val adapter = this.context?.let { AbgabeAdapter(it, getAbgaben()) }
         listView.adapter = adapter
-
         return view
     }
 
@@ -31,6 +27,7 @@ class HomeFragment : Fragment() {
         val abgaben = mutableListOf<Abgabe>()
         val sharedPreferences = context?.getSharedPreferences("sharedPrefs", Context.MODE_PRIVATE)
 
+        //sharedPreferences?.edit()?.clear()?.apply()
         val jsonString = sharedPreferences?.getString("json", "[]")
         val jsonArray = JSONArray(jsonString)
 
@@ -38,13 +35,10 @@ class HomeFragment : Fragment() {
             val currJsonString = jsonArray.getString(i)
             try {
                 val currJsonObj = JSONObject(currJsonString)
-                val list: List<Task> = listOf()
                 val curr = Abgabe(
                     currJsonObj.getInt("id"),
                     currJsonObj.getString("name"),
                     currJsonObj.getString("date"),
-                    currJsonObj.getString("subject"),
-                    list,
                     currJsonObj.getString("description"),
                     currJsonObj.getBoolean("isDone")
                 )
@@ -55,4 +49,6 @@ class HomeFragment : Fragment() {
         }
         return abgaben
     }
+
+
 }

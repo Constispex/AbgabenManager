@@ -1,13 +1,16 @@
 package de.medieninformatik.androidapp.model
 
 import android.content.Context
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.BaseAdapter
 import android.widget.TextView
 import de.medieninformatik.abgabenmanager.model.Abgabe
+import de.medieninformatik.androidapp.MainActivity
 import de.medieninformatik.androidapp.R
+import de.medieninformatik.androidapp.views.ShowAbgabeFragment
 
 class AbgabeAdapter(private val context: Context, private val abgaben: List<Abgabe>) : BaseAdapter() {
 
@@ -31,9 +34,19 @@ class AbgabeAdapter(private val context: Context, private val abgaben: List<Abga
         val dateTextView = view.findViewById<TextView>(R.id.dateTextView)
 
         val abgabe = abgaben[position]
+
+        view.setOnClickListener {
+            Log.i("Abgabe", "Abgabe with id ${abgabe.id} was selected")
+            val showAbgabeFragment = ShowAbgabeFragment.newInstance(abgabe.id)
+            val transaction = (context as MainActivity).supportFragmentManager.beginTransaction()
+            transaction.replace(R.id.fragmentContainerView, showAbgabeFragment).commit()
+        }
+
         nameTextView.text = abgabe.name
         dateTextView.text = abgabe.date
 
         return view
     }
+
+
 }
