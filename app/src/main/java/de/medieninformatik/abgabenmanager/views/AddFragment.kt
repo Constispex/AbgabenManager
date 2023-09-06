@@ -1,4 +1,4 @@
-package de.medieninformatik.androidapp.views
+package de.medieninformatik.abgabenmanager.views
 
 import android.content.Context
 import android.os.Bundle
@@ -13,16 +13,20 @@ import androidx.core.widget.addTextChangedListener
 import androidx.fragment.app.Fragment
 import com.google.android.material.textfield.TextInputEditText
 import com.google.gson.Gson
+import de.medieninformatik.abgabenmanager.R
 import de.medieninformatik.abgabenmanager.model.Abgabe
-import de.medieninformatik.androidapp.R
 import org.json.JSONArray
 
+/**
+ * Die Klasse dient als Fragment für die Add Abgabe Seite.
+ */
 class AddFragment : Fragment() {
 
+    /**
+     * Die Methode onCreateView() wird aufgerufen, wenn das Fragment erstellt wird.
+     */
     override fun onCreateView(
-        inflater: LayoutInflater,
-        container: ViewGroup?,
-        savedInstanceState: Bundle?
+        inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?
     ): View? {
         val view = inflater.inflate(
             R.layout.add_fragment, container, false
@@ -36,18 +40,17 @@ class AddFragment : Fragment() {
         val buttonSubmit = view.findViewById(R.id.button_submit) as Button
         var isDate = false
 
-        inDate.addTextChangedListener(
-            onTextChanged = { text, _, _, _ ->
-                if (text.toString().length == 2) {
-                    inDate.setText(text.toString() + ".")
-                    inDate.setSelection(inDate.text.toString().length)
-                }
-                if (text.toString().length == 5) {
-                    inDate.setText(text.toString() + ".")
-                    inDate.setSelection(inDate.text.toString().length)
-                }
-                isDate = text.toString().matches(Regex("\\d{2}\\.\\d{2}\\.\\d{4}"))
+        inDate.addTextChangedListener(onTextChanged = { text, _, _, _ ->
+            if (text.toString().length == 2) {
+                inDate.setText(text.toString() + ".")
+                inDate.setSelection(inDate.text.toString().length)
             }
+            if (text.toString().length == 5) {
+                inDate.setText(text.toString() + ".")
+                inDate.setSelection(inDate.text.toString().length)
+            }
+            isDate = text.toString().matches(Regex("\\d{2}\\.\\d{2}\\.\\d{4}"))
+        }
 
         )
 
@@ -81,6 +84,9 @@ class AddFragment : Fragment() {
         return view
     }
 
+    /**
+     * Die Methode füllt den Text mit einem Platzhalter s, wenn dieser leer ist.
+     */
     private fun fillIfEmpty(text: Editable?, s: String): String {
         if (text.toString() == "") {
             return s
@@ -88,6 +94,9 @@ class AddFragment : Fragment() {
         return text.toString()
     }
 
+    /**
+     * Die Methode gibt die letzte ID zurück, die in den SharedPreferences gespeichert wurde.
+     */
     private fun getLastId(): Int {
         val sharedPreferences = context?.getSharedPreferences("sharedPrefs", Context.MODE_PRIVATE)
         val jsonString = sharedPreferences?.getString("json", "[]")
@@ -95,6 +104,9 @@ class AddFragment : Fragment() {
         return jsonArray.length() + 1
     }
 
+    /**
+     * Die Methode fügt die Abgabe dem JSON Array hinzu.
+     */
     private fun addToJson(abgabe: Abgabe) {
         val sharedPreferences = context?.getSharedPreferences("sharedPrefs", Context.MODE_PRIVATE)
         val gson = Gson()

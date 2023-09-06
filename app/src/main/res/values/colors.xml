@@ -1,2 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources />
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorItemBackground">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorBackground">#ffffff</color>
+    <color name="colorText">#000000</color>
+    <color name="colorButton">#3F51B5</color>
+    <color name="colorButtonBorder">#C5CAE9</color>
+    <color name="colorTextButton">#ffffff</color>
+    <color name="colorTextButtonDark">#ffffff</color>
+    <color name="colorTextButtonLight">#3F51B5</color>
+    <color name="colorTextButtonLighter">#3F51B5</color>
+    <color name="colorTextButtonLightest">#3F51B5</color>
+    <color name="colorTextButtonBorder">#ffffff</color>
+    <color name="colorTextButtonBorderDark">#ffffff</color>
+    <color name="colorTextButtonBorderLight">#3F51B5</color>
+    <color name="colorTextAppBarLight">#3F51B5</color>
+    <color name="colorDateNormal">#000000</color>
+    <color name="colorDateYellow">#FFA000</color>
+    <color name="colorDateRed">#921D1D</color>
+    <color name="colorDateGreen">#388E3C</color>
+    <color name="colorDone">#388E3C</color>
+
+</resources>

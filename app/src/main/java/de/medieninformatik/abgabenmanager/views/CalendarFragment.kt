@@ -1,4 +1,4 @@
-package de.medieninformatik.androidapp.views
+package de.medieninformatik.abgabenmanager.views
 
 import android.content.Context
 import android.graphics.Color
@@ -10,8 +10,8 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import com.github.sundeepk.compactcalendarview.CompactCalendarView
 import com.github.sundeepk.compactcalendarview.domain.Event
+import de.medieninformatik.abgabenmanager.R
 import de.medieninformatik.abgabenmanager.model.Abgabe
-import de.medieninformatik.androidapp.R
 import org.json.JSONArray
 import org.json.JSONObject
 import java.text.SimpleDateFormat
@@ -19,11 +19,15 @@ import java.util.Calendar
 import java.util.Date
 import java.util.Locale
 
+/**
+ * Die Klasse dient als Fragment für die Kalender Seite.
+ */
 class CalendarFragment : Fragment() {
+    /**
+     * Die Methode onCreateView() wird aufgerufen, wenn das Fragment erstellt wird.
+     */
     override fun onCreateView(
-        inflater: LayoutInflater,
-        container: ViewGroup?,
-        savedInstanceState: Bundle?
+        inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?
     ): View? {
         val view = inflater.inflate(R.layout.calendar_fragment, container, false)
 
@@ -32,6 +36,9 @@ class CalendarFragment : Fragment() {
         return view
     }
 
+    /**
+     * Die Methode updateCalendar() wird aufgerufen, wenn der Kalender aktualisiert werden soll.
+     */
     private fun updateCalendar(view: View?) {
         val calendarView: CompactCalendarView? = view?.findViewById(R.id.calendarView)
         val abgaben = getAbgaben()
@@ -87,6 +94,9 @@ class CalendarFragment : Fragment() {
         }
     }
 
+    /**
+     * Die Methode abgabenToCalendar() wandelt eine Liste von Abgaben in eine Liste von Calendar Objekten um.
+     */
     private fun abgabenToCalendar(list: List<Abgabe>): MutableList<Calendar> {
         val calendar: Calendar = Calendar.getInstance()
         val calendarEvents = mutableListOf<Calendar>()
@@ -99,6 +109,9 @@ class CalendarFragment : Fragment() {
         return calendarEvents
     }
 
+    /**
+     * Die Methode getAbgaben() gibt die Liste der gespeicherten Abgaben zurück.
+     */
     private fun getAbgaben(): MutableList<Abgabe> {
         val abgaben = mutableListOf<Abgabe>()
         val sharedPreferences = context?.getSharedPreferences("sharedPrefs", Context.MODE_PRIVATE)
@@ -124,5 +137,4 @@ class CalendarFragment : Fragment() {
         }
         return abgaben
     }
-
 }

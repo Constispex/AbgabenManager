@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "de.medieninformatik.androidapp-mergeDebugResources-28:/values-h720dp-v13/values-h720dp-v13.xml",
+            "outputFile": "de.medieninformatik.abgabenmanager.app-mergeDebugResources-28:/values-h720dp-v13/values-h720dp-v13.xml",
             "map": [
                 {
                     "source": "C:\\Users\\feuer\\.gradle\\caches\\transforms-3\\4ca3ca160350e83fe776b368c4ad6f86\\transformed\\appcompat-1.6.1\\res\\values-h720dp-v13\\values-h720dp-v13.xml",

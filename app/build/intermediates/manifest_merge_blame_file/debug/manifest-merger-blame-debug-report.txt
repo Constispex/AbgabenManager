@@ -1,6 +1,6 @@
 1<?xml version="1.0" encoding="utf-8"?>
 2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-3    package="de.medieninformatik.androidapp"
+3    package="de.medieninformatik.abgabenmanager"
 4    android:versionCode="1"
 5    android:versionName="1.0" >
 6
@@ -12,12 +12,12 @@
 10
 11    <permission
 11-->[androidx.core:core:1.9.0] C:\Users\feuer\.gradle\caches\transforms-3\b08cbafe3023eea4ef8ad01980442655\transformed\core-1.9.0\AndroidManifest.xml:22:5-24:47
-12        android:name="de.medieninformatik.androidapp.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+12        android:name="de.medieninformatik.abgabenmanager.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
 12-->[androidx.core:core:1.9.0] C:\Users\feuer\.gradle\caches\transforms-3\b08cbafe3023eea4ef8ad01980442655\transformed\core-1.9.0\AndroidManifest.xml:23:9-81
 13        android:protectionLevel="signature" />
 13-->[androidx.core:core:1.9.0] C:\Users\feuer\.gradle\caches\transforms-3\b08cbafe3023eea4ef8ad01980442655\transformed\core-1.9.0\AndroidManifest.xml:24:9-44
 14
-15    <uses-permission android:name="de.medieninformatik.androidapp.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+15    <uses-permission android:name="de.medieninformatik.abgabenmanager.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
 15-->[androidx.core:core:1.9.0] C:\Users\feuer\.gradle\caches\transforms-3\b08cbafe3023eea4ef8ad01980442655\transformed\core-1.9.0\AndroidManifest.xml:26:5-97
 15-->[androidx.core:core:1.9.0] C:\Users\feuer\.gradle\caches\transforms-3\b08cbafe3023eea4ef8ad01980442655\transformed\core-1.9.0\AndroidManifest.xml:26:22-94
 16
@@ -46,7 +46,7 @@
 29-->C:\Users\feuer\AndroidStudioProjects\androidapp\app\src\main\AndroidManifest.xml:13:9-48
 30        <activity
 30-->C:\Users\feuer\AndroidStudioProjects\androidapp\app\src\main\AndroidManifest.xml:15:9-23:20
-31            android:name="de.medieninformatik.androidapp.MainActivity"
+31            android:name="de.medieninformatik.abgabenmanager.MainActivity"
 31-->C:\Users\feuer\AndroidStudioProjects\androidapp\app\src\main\AndroidManifest.xml:16:13-41
 32            android:exported="true" >
 32-->C:\Users\feuer\AndroidStudioProjects\androidapp\app\src\main\AndroidManifest.xml:17:13-36
@@ -66,7 +66,7 @@
 40-->[androidx.emoji2:emoji2:1.2.0] C:\Users\feuer\.gradle\caches\transforms-3\b8a6fa231833dfad2af41f138e0398d8\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
 41            android:name="androidx.startup.InitializationProvider"
 41-->[androidx.emoji2:emoji2:1.2.0] C:\Users\feuer\.gradle\caches\transforms-3\b8a6fa231833dfad2af41f138e0398d8\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:25:13-67
-42            android:authorities="de.medieninformatik.androidapp.androidx-startup"
+42            android:authorities="de.medieninformatik.abgabenmanager.androidx-startup"
 42-->[androidx.emoji2:emoji2:1.2.0] C:\Users\feuer\.gradle\caches\transforms-3\b8a6fa231833dfad2af41f138e0398d8\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:26:13-68
 43            android:exported="false" >
 43-->[androidx.emoji2:emoji2:1.2.0] C:\Users\feuer\.gradle\caches\transforms-3\b8a6fa231833dfad2af41f138e0398d8\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:27:13-37

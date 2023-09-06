@@ -1,11 +1,34 @@
 R_DEF: Internal format may change without notice
 local
+color colorAccent
+color colorBackground
+color colorButton
+color colorButtonBorder
+color colorDateGreen
+color colorDateNormal
+color colorDateRed
+color colorDateYellow
+color colorDone
+color colorItemBackground
+color colorPrimary
+color colorText
+color colorTextAppBarLight
+color colorTextButton
+color colorTextButtonBorder
+color colorTextButtonBorderDark
+color colorTextButtonBorderLight
+color colorTextButtonDark
+color colorTextButtonLight
+color colorTextButtonLighter
+color colorTextButtonLightest
 drawable ic_launcher_background
 drawable ic_launcher_foreground
+id abgabe_list_item_layout
 id bottomNavigationView
-id button2
-id button3
+id buttonIsDone
 id button_cancel
+id button_close
+id button_delete
 id button_submit
 id calendarItemLayout
 id calendarView
@@ -41,9 +64,6 @@ menu bottom_menu
 mipmap ic_launcher
 mipmap ic_launcher_round
 string app_name
-string aufgaben
-string task1
-string task_2
 style Base.Theme.Androidapp
 style Theme.Androidapp
 xml backup_rules

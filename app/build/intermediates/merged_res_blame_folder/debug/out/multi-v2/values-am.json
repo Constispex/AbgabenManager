@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "de.medieninformatik.androidapp-mergeDebugResources-28:/values-am/values-am.xml",
+            "outputFile": "de.medieninformatik.abgabenmanager.app-mergeDebugResources-28:/values-am/values-am.xml",
             "map": [
                 {
                     "source": "C:\\Users\\feuer\\.gradle\\caches\\transforms-3\\b08cbafe3023eea4ef8ad01980442655\\transformed\\core-1.9.0\\res\\values-am\\values-am.xml",

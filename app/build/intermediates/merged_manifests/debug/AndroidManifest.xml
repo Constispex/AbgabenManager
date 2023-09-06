@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="de.medieninformatik.androidapp"
+    package="de.medieninformatik.abgabenmanager"
     android:versionCode="1"
     android:versionName="1.0" >
 
@@ -9,10 +9,10 @@
         android:targetSdkVersion="33" />
 
     <permission
-        android:name="de.medieninformatik.androidapp.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+        android:name="de.medieninformatik.abgabenmanager.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
         android:protectionLevel="signature" />
 
-    <uses-permission android:name="de.medieninformatik.androidapp.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+    <uses-permission android:name="de.medieninformatik.abgabenmanager.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
 
     <application
         android:allowBackup="true"
@@ -28,7 +28,7 @@
         android:testOnly="true"
         android:theme="@style/Theme.Androidapp" >
         <activity
-            android:name="de.medieninformatik.androidapp.MainActivity"
+            android:name="de.medieninformatik.abgabenmanager.MainActivity"
             android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -39,7 +39,7 @@
 
         <provider
             android:name="androidx.startup.InitializationProvider"
-            android:authorities="de.medieninformatik.androidapp.androidx-startup"
+            android:authorities="de.medieninformatik.abgabenmanager.androidx-startup"
             android:exported="false" >
             <meta-data
                 android:name="androidx.emoji2.text.EmojiCompatInitializer"

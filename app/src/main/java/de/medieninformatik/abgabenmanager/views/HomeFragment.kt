@@ -1,4 +1,4 @@
-package de.medieninformatik.androidapp.views
+package de.medieninformatik.abgabenmanager.views
 
 import android.content.Context
 import android.os.Bundle
@@ -8,14 +8,22 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.ListView
 import androidx.fragment.app.Fragment
+import de.medieninformatik.abgabenmanager.R
 import de.medieninformatik.abgabenmanager.model.Abgabe
-import de.medieninformatik.androidapp.R
-import de.medieninformatik.androidapp.model.AbgabeAdapter
+import de.medieninformatik.abgabenmanager.model.AbgabeAdapter
 import org.json.JSONArray
 import org.json.JSONObject
 
+/**
+ * Die Klasse dient als Fragment für die Home Seite.
+ */
 class HomeFragment : Fragment() {
-    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
+    /**
+     * Die Methode onCreateView() wird aufgerufen, wenn das Fragment erstellt wird.
+     */
+    override fun onCreateView(
+        inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?
+    ): View? {
         val view = inflater.inflate(R.layout.home_fragment, container, false)
         val listView: ListView = view.findViewById(R.id.listView)
         val adapter = this.context?.let { AbgabeAdapter(it, getAbgaben()) }
@@ -23,11 +31,13 @@ class HomeFragment : Fragment() {
         return view
     }
 
+    /**
+     * Die Methode getAbgaben() gibt alle Abgaben zurück, die in der SharedPreferences gespeichert sind.
+     */
     private fun getAbgaben(): MutableList<Abgabe> {
         val abgaben = mutableListOf<Abgabe>()
         val sharedPreferences = context?.getSharedPreferences("sharedPrefs", Context.MODE_PRIVATE)
 
-        //sharedPreferences?.edit()?.clear()?.apply()
         val jsonString = sharedPreferences?.getString("json", "[]")
         val jsonArray = JSONArray(jsonString)
 
@@ -49,6 +59,4 @@ class HomeFragment : Fragment() {
         }
         return abgaben
     }
-
-
 }

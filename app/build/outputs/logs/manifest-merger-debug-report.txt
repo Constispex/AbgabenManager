@@ -100,7 +100,7 @@ MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\feuer\.gradle\cach
 		ADDED from C:\Users\feuer\AndroidStudioProjects\androidapp\app\src\main\AndroidManifest.xml:13:9-48
 	android:dataExtractionRules
 		ADDED from C:\Users\feuer\AndroidStudioProjects\androidapp\app\src\main\AndroidManifest.xml:7:9-65
-activity#de.medieninformatik.androidapp.MainActivity
+activity#de.medieninformatik.abgabenmanager.MainActivity
 ADDED from C:\Users\feuer\AndroidStudioProjects\androidapp\app\src\main\AndroidManifest.xml:15:9-23:20
 	android:exported
 		ADDED from C:\Users\feuer\AndroidStudioProjects\androidapp\app\src\main\AndroidManifest.xml:17:13-36
@@ -238,7 +238,7 @@ ADDED from [androidx.core:core:1.9.0] C:\Users\feuer\.gradle\caches\transforms-3
 		ADDED from [androidx.core:core:1.9.0] C:\Users\feuer\.gradle\caches\transforms-3\b08cbafe3023eea4ef8ad01980442655\transformed\core-1.9.0\AndroidManifest.xml:24:9-44
 	android:name
 		ADDED from [androidx.core:core:1.9.0] C:\Users\feuer\.gradle\caches\transforms-3\b08cbafe3023eea4ef8ad01980442655\transformed\core-1.9.0\AndroidManifest.xml:23:9-81
-permission#de.medieninformatik.androidapp.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+permission#de.medieninformatik.abgabenmanager.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
 ADDED from [androidx.core:core:1.9.0] C:\Users\feuer\.gradle\caches\transforms-3\b08cbafe3023eea4ef8ad01980442655\transformed\core-1.9.0\AndroidManifest.xml:22:5-24:47
 	android:protectionLevel
 		ADDED from [androidx.core:core:1.9.0] C:\Users\feuer\.gradle\caches\transforms-3\b08cbafe3023eea4ef8ad01980442655\transformed\core-1.9.0\AndroidManifest.xml:24:9-44
@@ -248,7 +248,7 @@ uses-permission#${applicationId}.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
 ADDED from [androidx.core:core:1.9.0] C:\Users\feuer\.gradle\caches\transforms-3\b08cbafe3023eea4ef8ad01980442655\transformed\core-1.9.0\AndroidManifest.xml:26:5-97
 	android:name
 		ADDED from [androidx.core:core:1.9.0] C:\Users\feuer\.gradle\caches\transforms-3\b08cbafe3023eea4ef8ad01980442655\transformed\core-1.9.0\AndroidManifest.xml:26:22-94
-uses-permission#de.medieninformatik.androidapp.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+uses-permission#de.medieninformatik.abgabenmanager.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
 ADDED from [androidx.core:core:1.9.0] C:\Users\feuer\.gradle\caches\transforms-3\b08cbafe3023eea4ef8ad01980442655\transformed\core-1.9.0\AndroidManifest.xml:26:5-97
 	android:name
 		ADDED from [androidx.core:core:1.9.0] C:\Users\feuer\.gradle\caches\transforms-3\b08cbafe3023eea4ef8ad01980442655\transformed\core-1.9.0\AndroidManifest.xml:26:22-94

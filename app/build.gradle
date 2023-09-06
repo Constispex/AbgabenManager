@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace 'de.medieninformatik.androidapp'
+    namespace 'de.medieninformatik.abgabenmanager'
     compileSdk 33
 
     defaultConfig {
-        applicationId "de.medieninformatik.androidapp"
+        applicationId "de.medieninformatik.abgabenmanager"
         minSdk 24
         targetSdk 33
         versionCode 1

@@ -18,7 +18,7 @@
 
     <androidx.fragment.app.FragmentContainerView
         android:id="@+id/fragmentContainerView"
-        android:name="de.medieninformatik.androidapp.views.ShowAbgabeFragment"
+        android:name="de.medieninformatik.abgabenmanager.views.ShowAbgabeFragment"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="52dp"
